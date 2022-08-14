@@ -61,10 +61,6 @@ a {
     color: rgb(5, 109, 36);
 }
 
-.contacto2{
-    margin-top: 253px;
-}
-
 /*---------MAIN---------*/
 /*---------MAIN---------*/
 
@@ -133,7 +129,7 @@ main .inicioMain{
 
     /*----Contacto----*/
 
-.contactoMain h1{
+.contactoH1 {
     grid-area: h1Contacto;
     font-family: 'Oswald', sans-serif;
     margin: 18px 0 168px 0;
@@ -142,6 +138,12 @@ main .inicioMain{
     color: transparent;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.contactoMain {
+    margin: 3rem;
+    padding: 3rem;
+    text-align: center;
 }
 
     /*----Noticias----*/
