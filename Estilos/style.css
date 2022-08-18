@@ -64,10 +64,6 @@ a {
 /*---------MAIN---------*/
 /*---------MAIN---------*/
 
-main {
-    text-align: center;
-}
-
     /*----Inicio----*/
 
 .inicioMain h1{
@@ -129,8 +125,7 @@ main .inicioMain{
 
     /*----Contacto----*/
 
-.contactoH1 {
-    grid-area: h1Contacto;
+/*.contactoH1 {
     font-family: 'Oswald', sans-serif;
     margin: 18px 0 168px 0;
     font-size: 38px;
@@ -138,6 +133,17 @@ main .inicioMain{
     color: transparent;
     font-weight: 600;
     text-transform: uppercase;
+}*/
+
+.contactoH1{
+    margin: 35px;
+    -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
+    color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    font-weight: 600;
 }
 
 .contactoMain {
@@ -197,7 +203,31 @@ main .noticiasMain{
 
     /*----Servicios----*/
 
-.serviciosMain .img1{
+    .serviciosH1{
+        margin: 35px;
+        -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
+        color: transparent;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    .serviciosArticle{
+        padding: 10px 300px 150px 300px;
+        
+    }
+    .serviciosArticle h5 {
+        font-size: 1.5vw;
+        padding: 5px;
+        background-color: aliceblue;
+    }
+
+
+
+
+/*.serviciosMain .img1{
     grid-area: gImg1;
     margin: 3.5rem;
 }
@@ -217,16 +247,7 @@ main .noticiasMain{
     margin: 3.5rem;
 }
 
-.serviciosMain h1{
-    grid-area: h1Servicios;
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 35px;
-    font-size: 38px;
-    -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
-    color: transparent;
-    font-weight: 600;
-    text-transform: uppercase;
-}
+
 
 main .serviciosMain{
     margin: 1rem 0;
@@ -244,14 +265,29 @@ main .serviciosMain{
     justify-items: center;
 }
 
-.serviciosMain img{
-    width: 80%;
+.serviciosMain h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 35px;
+    font-size: 38px;
+    -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
+    color: transparent;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .serviciosMain a{
     font-size: 1.5rem;
     font-weight: bolder;
+} 
+
+.serviciosMain {
+    margin: 10rem;
+    padding: 10rem;
+    align-items: center;
 }
+
+*/
 
     /*----Redes----*/
 
