@@ -17,26 +17,39 @@
 
 <body>
     <header>
-        <div class="Logo">
-            <a href="index.html"><img src="../Imagenes/John-Deere-Logo.png" alt="logo" width="200px"></a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <input type="text" placeholder="Buscar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                  <img src="../Imagenes/john-deere-1956-logo-19AF2AFF6E-seeklogo.com.png" alt="" width="100" height="70">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">
+                      <h6>Inicio</h6></a>
                 </li>
-                <li>
-                    <a href="../index.html">Inicio</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">
+                      <h6>Contacto</h6></a>
                 </li>
-                <li>
-                    <a href="Contacto.html">Contacto</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="noticias.html">
+                      <h6>Noticias</h6></a>
                 </li>
-                <li>
-                    <a href="Noticias.html">Noticias</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">
+                      <h6>Servicios</h6></a>
                 </li>
-                <li><a href="Servicios.html">Servicios</a>
-                </li>
-            </ul>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
         </nav>
     </header>
     <main>
@@ -71,10 +84,13 @@
             <nav>
                 <ul>
                     <li><a
-                            href="https://www.google.com/maps/place/Navarro+S.A./@-38.684316,-62.2304363,15z/data=!4m5!3m4!1s0x0:0x3ca15e228b4db8a!8m2!3d-38.6843487!4d-62.2303945">Ubicación</a>
+                            href="https://www.google.com/maps/place/Navarro+S.A./@-38.684316,-62.2304363,15z/data=!4m5!3m4!1s0x0:0x3ca15e228b4db8a!8m2!3d-38.6843487!4d-62.2303945">
+                            <h6>Ubicación</h6></a>
                     </li>
-                    <li><a href="Redes.html">Redes</a></li>
-                    <li><a href="Compañia.html">Compañía</a></li>
+                    <li><a href="Redes.html">
+                      <h6>Redes</h6></a></li>
+                    <li><a href="Compania.html">
+                      <h6>Compañía</h6></a></li>
                 </ul>
             </nav>
         </footer>
