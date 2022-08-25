@@ -14,12 +14,11 @@ body{
 
 header{
     font-family: 'Oswald', sans-serif;
-}
-
-header h6{
-    color: rgb(226, 202, 67);
-    text-shadow: rgb(32, 73, 43) 0.05em 0.05em;
-    font-size: large;
+    h6{
+        color: rgb(226, 202, 67);
+        text-shadow: rgb(32, 73, 43) 0.05em 0.05em;
+        font-size: large;
+    }
 }
 
 /*---------MAIN---------*/
@@ -27,47 +26,9 @@ header h6{
 
     /*----Inicio----*/
 
-.inicioMain h1{
-    grid-area: h1Inicio;
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 35px;
-    font-size: 38px;
-    -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
-    color: transparent;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.inicioMain img{
-    width: 100%;
-}
-
-.inicioMain .img1{
-    grid-area: gImg1;
-}
-
-.inicioMain .img2{
-    grid-area: gImg2;
-}
-
-.inicioMain .img3{
-    grid-area: gImg3;
-}
-
-.inicioMain .p1{
-    grid-area: gP1;
-}
-
-.inicioMain .p2{
-    grid-area: gP2;
-}
-
-.inicioMain .p3{
-    grid-area: gP3;
-}
-
-main .inicioMain{
-    margin: 1rem 0;
+main{
+    .inicioMain{
+        margin: 1rem 0;
     padding: 0 1rem;
     display: grid;
     grid-template-columns: 100%;
@@ -82,6 +43,46 @@ main .inicioMain{
         'gImg3'
         'gP3';
     justify-items: center;
+    }
+
+    h1{
+        grid-area: h1Inicio;
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 35px;
+        font-size: 38px;
+        -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
+        color: transparent;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .img1{
+        grid-area: gImg1;
+    }
+
+    .img2{
+        grid-area: gImg2;
+    }
+
+    .img3{
+        grid-area: gImg3;
+    }
+
+    .p1{
+        grid-area: gP1;
+    }
+
+    .p2{
+        grid-area: gP2;
+    }
+
+    .p3{
+        grid-area: gP3;
+    }
 }
 
     /*----Contacto----*/
@@ -378,29 +379,30 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: #198754;
-}
 
-footer ul{
-    height: 24vh;
-    width: 100%;
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-}
-
-footer h6 {
-    color: rgb(226, 202, 67);
-    text-shadow: rgb(32, 73, 43) 0.05em 0.05em;
-    font-size: large;
-    list-style: none;
+    ul{
+        height: 24vh;
+        width: 100%;
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        text-decoration: none;
     }
+    
+    h6{
+        color: rgb(226, 202, 67);
+        text-shadow: rgb(32, 73, 43) 0.05em 0.05em;
+        font-size: large;
+        list-style: none;
+    }
+    
     a{
         text-decoration: none;
     }
+}
 
         /* TABLET */
 
@@ -415,79 +417,72 @@ footer h6 {
         height: 70%;
         display: flex;
         flex-direction: column;
-    }
 
-    footer ul{
-        height: 15vh;
-        width: 100%;
-        background-color: #198754;
-        font-family: 'Oswald', sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        list-style: none;
-        text-decoration: none;
-    }
+        ul{
+            height: 15vh;
+            width: 100%;
+            background-color: #198754;
+            font-family: 'Oswald', sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            text-decoration: none;
+        }
 
-    footer h6 {
-        color: rgb(226, 202, 67);
-        text-shadow: rgb(32, 73, 43) 0.05em 0.05em;
-        font-size: large;
-        list-style: none;
-        text-decoration: none;
+        h6 {
+            color: rgb(226, 202, 67);
+            text-shadow: rgb(32, 73, 43) 0.05em 0.05em;
+            font-size: large;
+            list-style: none;
+            text-decoration: none;
+        }
     }
-
 }
 
         /* DESKTOP */
 
 @media screen and (min-width : 1024px) {
 
-    main .inicioMain{
-        margin: 1rem 0 3rem 0;
-        padding: 0 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 3.5rem;
-        grid-template-areas: 
-            'h1Inicio   h1Inicio'
-            'gP1   gImg1'
-            'gImg2   gP2'
-            'gP3   gImg3';
-        justify-items: center;
+    main{
+        .inicioMain{
+            margin: 1rem 0 3rem 0;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 3.5rem;
+            grid-template-areas: 
+                'h1Inicio   h1Inicio'
+                'gP1   gImg1'
+                'gImg2   gP2'
+                'gP3   gImg3';
+            justify-items: center;
+        }
+
+        p{
+            font-size: 1.7vw;
+        }
+
+        .companiaMain{
+            margin: 1rem 0 3rem 0;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 2.5rem;
+            grid-template-areas: 
+                'h1Compania h1Compania'
+                'gH2 gH2'
+                'gImg1 gP1'
+                'gH3 gH3'
+                'gImg2 gP2'
+                'gH4 gH4'
+                'gImg3 gP3'
+                'gH5 gH5'
+                'gImg4 gP4';
+            justify-items: center;
+        }
     }
-
-    main p{
-        font-size: 1.7vw;
-    }
-
-    main .companiaMain{
-        margin: 1rem 0 3rem 0;
-        padding: 0 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 2.5rem;
-        grid-template-areas: 
-            'h1Compania h1Compania'
-            'gH2 gH2'
-            'gImg1 gP1'
-            'gH3 gH3'
-            'gImg2 gP2'
-            'gH4 gH4'
-            'gImg3 gP3'
-            'gH5 gH5'
-            'gImg4 gP4';
-        justify-items: center;
-    }
-    
-    
-
-
-
-
-
-
 }
