@@ -5,6 +5,27 @@
   box-sizing: border-box;
 }
 
+.grids, .companiaMain h1, .redesMain h1, .serviciosH1, .noticiasMain h1, .contactoH1, main h1 {
+  margin: 35px;
+  -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
+  color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.gridsV2, main .companiaMain, main .noticiasMain, main .inicioMain {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 2rem;
+  justify-items: center;
+}
+
 body {
   background-color: rgb(207, 235, 215);
 }
@@ -24,26 +45,12 @@ header h6 {
 /*---------MAIN---------*/
 /*----Inicio----*/
 main .inicioMain {
-  margin: 1rem 0;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  gap: 2rem;
   grid-template-areas: "h1Inicio" "gImg1" "gP1" "gImg2" "gP2" "gImg3" "gP3";
-  justify-items: center;
 }
 main h1 {
   grid-area: h1Inicio;
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 35px;
-  font-size: 38px;
-  -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
-  color: transparent;
-  font-weight: 600;
-  text-transform: uppercase;
 }
-main img {
+main img, main footer ul, footer main ul, main .noticiasMain footer ul, .noticiasMain footer main ul, main footer .noticiasMain ul, footer .noticiasMain main ul, main .companiaMain footer ul, .companiaMain footer main ul, main footer .companiaMain ul, footer .companiaMain main ul, main footer, main .noticiasMain footer, .noticiasMain main footer, main .companiaMain footer, .companiaMain main footer, main .companiaMain img, footer main .companiaMain ul, .companiaMain main img, .companiaMain main footer ul, main .noticiasMain img, footer main .noticiasMain ul, .noticiasMain main img, .noticiasMain main footer ul {
   width: 100%;
 }
 main .img1 {
@@ -66,17 +73,6 @@ main .p3 {
 }
 
 /*----Contacto----*/
-.contactoH1 {
-  margin: 35px;
-  -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
-  color: transparent;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 38px;
-  font-weight: 600;
-}
-
 .contactoMain {
   margin: 3rem;
   padding: 3rem;
@@ -87,13 +83,6 @@ main .p3 {
 /*----Noticias----*/
 .noticiasMain h1 {
   grid-area: h1Noticias;
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 35px;
-  font-size: 38px;
-  -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
-  color: transparent;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 .noticiasMain .img1 {
@@ -113,32 +102,10 @@ main .p3 {
 }
 
 main .noticiasMain {
-  margin: 1rem 0;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  gap: 2rem;
   grid-template-areas: "h1Noticias" "gImg1" "gP1" "gImg2" "gP2";
-  justify-items: center;
-}
-
-.noticiasMain img {
-  width: 100%;
 }
 
 /*----Servicios----*/
-.serviciosH1 {
-  margin: 35px;
-  -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
-  color: transparent;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 38px;
-  font-weight: 600;
-}
-
 .serviciosArticle {
   padding: 10px 300px 150px 300px;
 }
@@ -152,13 +119,6 @@ main .noticiasMain {
 /*----Redes----*/
 .redesMain h1 {
   grid-area: h1Redes;
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 35px;
-  font-size: 38px;
-  -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
-  color: transparent;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 main .redesMain {
@@ -205,13 +165,6 @@ main .redesMain {
 /*----Compañía----*/
 .companiaMain h1 {
   grid-area: h1Compania;
-  font-family: "Oswald", sans-serif;
-  margin-bottom: 35px;
-  font-size: 38px;
-  -webkit-text-stroke: 0.0001em rgb(5, 109, 36);
-  color: transparent;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 .companiaMain .img1 {
@@ -274,43 +227,14 @@ main .redesMain {
   margin: 1rem;
 }
 
-.companiaMain img {
-  width: 100%;
-}
-
 main .companiaMain {
-  margin: 1rem 0;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  gap: 1rem;
   grid-template-areas: "h1Compania" "gH2" "gImg1" "gP1" "gH3" "gImg2" "gP2" "gH4" "gImg3" "gP3" "gH5" "gImg4" "gP4";
-  justify-items: center;
 }
 
 /*----General----*/
-h2 {
+h2, h5, h4, h3 {
   font-family: "Oswald", sans-serif;
-  font-size: 23px;
-  color: rgb(5, 109, 36);
-}
-
-h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 23px;
-  color: rgb(5, 109, 36);
-}
-
-h4 {
-  font-family: "Oswald", sans-serif;
-  font-size: 23px;
-  color: rgb(5, 109, 36);
-}
-
-h5 {
-  font-family: "Oswald", sans-serif;
-  font-size: 23px;
+  font-size: 40px;
   color: rgb(5, 109, 36);
 }
 
@@ -321,7 +245,7 @@ p {
   margin: 0 20% 0 20%;
 }
 
-main img {
+main img, main footer ul, footer main ul, main .noticiasMain footer ul, .noticiasMain footer main ul, main footer .noticiasMain ul, footer .noticiasMain main ul, main .companiaMain footer ul, .companiaMain footer main ul, main footer .companiaMain ul, footer .companiaMain main ul, main footer, main .noticiasMain footer, .noticiasMain main footer, main .companiaMain footer, .companiaMain main footer, main .noticiasMain img, footer main .noticiasMain ul, .noticiasMain main img, .noticiasMain main footer ul, main .companiaMain img, footer main .companiaMain ul, .companiaMain main img, .companiaMain main footer ul {
   align-items: center;
   text-align: center;
   padding: 0;
@@ -330,15 +254,13 @@ main img {
 /*---------FOOTER---------*/
 /*---------FOOTER---------*/
 footer {
-  width: 100%;
-  height: 0;
+  height: 50%;
   display: flex;
   flex-direction: column;
   background-color: #198754;
 }
 footer ul {
   height: 24vh;
-  width: 100%;
   font-family: "Oswald", sans-serif;
   display: flex;
   flex-direction: column;
@@ -362,14 +284,12 @@ footer a {
   /*---------HEADER---------*/
   /*---------FOOTER---------*/
   footer {
-    width: 100%;
     height: 70%;
     display: flex;
     flex-direction: column;
   }
   footer ul {
     height: 15vh;
-    width: 100%;
     background-color: #198754;
     font-family: "Oswald", sans-serif;
     display: flex;
